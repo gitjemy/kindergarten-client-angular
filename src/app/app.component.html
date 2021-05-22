@@ -1,0 +1,21 @@
+<app-nav [appName]="appName"></app-nav>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode='side'>
+        <menu>
+            asaasas
+        </menu>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <section>
+            <nav>
+                <mat-toolbar>
+                    <button mat-icon-button aria-label="Example icon button with a vertical three dot icon" (click)="sidenav.toggle()">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                </mat-toolbar>
+            </nav>
+            <app-kids [appName]="appName"></app-kids>
+        </section>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
